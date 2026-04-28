@@ -1,0 +1,84 @@
+site_name: Web3aggregator Documentation
+site_url: https://docs.web3aggregator.io/
+site_description: Documentation for the Web3aggregator platform — APIs, concepts, and integration guides.
+site_author: Web3aggregator
+copyright: Copyright &copy; Web3aggregator
+
+repo_url: https://github.com/<username>/docs
+repo_name: web3aggregator/docs
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Overview: getting-started/overview.md
+      - Quickstart: getting-started/quickstart.md
+      - Authentication: getting-started/authentication.md
+  - Concepts:
+      - Architecture: concepts/architecture.md
+      - Aggregation Layer: concepts/aggregation.md
+      - Reliability: concepts/reliability.md
+  - API Reference:
+      - Overview: api/overview.md
+      - REST API: api/rest.md
+      - WebSocket API: api/websocket.md
+      - Errors: api/errors.md
+  - Changelog: changelog.md
+
+extra:
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://web3aggregator.io
+    - icon: fontawesome/brands/github
+      link: https://github.com/<username>/docs
