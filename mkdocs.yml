@@ -4,8 +4,8 @@ site_description: Documentation for the Web3aggregator platform — APIs, concep
 site_author: Web3aggregator
 copyright: Copyright &copy; Web3aggregator
 
-repo_url: https://github.com/<username>/docs
-repo_name: web3aggregator/docs
+repo_url: https://github.com/Web3aggregator-dev/docs
+repo_name: Web3aggregator-dev/docs
 edit_uri: edit/main/docs/
 
 theme:
@@ -77,8 +77,9 @@ nav:
   - Changelog: changelog.md
 
 extra:
+  generator: false
   social:
     - icon: fontawesome/solid/globe
-      link: https://web3aggregator.io
+      link: https://docs.web3aggregator.io
     - icon: fontawesome/brands/github
-      link: https://github.com/<username>/docs
+      link: https://github.com/Web3aggregator-dev/docs
